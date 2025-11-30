@@ -9,8 +9,8 @@ const app = express();
 // FIX CORS CHUẨN CHO LOGIN COOKIE
 app.use(
   cors({
-    origin: import.meta.env.FRONTEND_URL,
-    credentials: true,
+    origin: true,      // hoặc origin: '*' nhưng credentials cần true nên dùng origin: true
+    credentials: true, // cho phép gửi cookie
   })
 );
 
