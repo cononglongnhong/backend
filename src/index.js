@@ -9,7 +9,7 @@ const app = express();
 // FIX CORS CHUẨN CHO LOGIN COOKIE
 app.use(
   cors({
-    origin: "http://localhost:5175",
+    origin: "https://frontend-8g8g7jymf-trungphongs-projects.vercel.app/",
     credentials: true,
   })
 );
